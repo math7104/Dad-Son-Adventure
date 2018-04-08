@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#scene {
+    width: 100vw;
+    height: 56.84vw;
+    position: relative;
+    animation-name: scene;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    overflow: hidden;
+}
+
+#background {
+    width: 100%;
+    height: 100%;
+    background-image: url(BackgroundMore2.svg);
+    background-size: 100% 100%;
+}
+
+#clouds {
+    width: 72.57vw;
+    height: 19.31vw;
+    background-image: url(Clouds1.svg);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 2vw;
+    left: 5vw;
+
+    animation-name: clouds;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#middleground {
+    width: 100vw;
+    height: 52.31vw;
+    background-image: url(Middleground1.svg);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 4.4vw;
+    left: 0vw;
+}
+
+#dad {
+    width: 19.57vw;
+    height: 32.15vw;
+    background-image: url(Dad1.svg);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 19vw;
+    left: 27vw;
+
+    animation-name: dad;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+#son {
+    width: 13.89vw;
+    height: 25.63vw;
+    background-image: url(Son1.svg);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 25.5vw;
+    left: 15vw;
+
+    animation-name: son;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+
+}
+
+#foreground {
+    width: 98.15vw;
+    height: 22.26vw;
+    background-image: url(Foreground1.svg);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 34.2vw;
+    left: 0vw;
+
+}
+
+#coyote {
+    width: 42.05vw;
+    height: 25.78vw;
+    background-image: url(Coyote1.svg);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 25vw;
+    left: 53vw;
+
+    animation-name: coyote;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+
+}
+
+
+@keyframes dad {
+
+    0% {
+        left: -20vw;
+        top: 19vw;
+        transform: scale(0.1);
+
+    }
+
+    100% {
+        left: 27vw;
+        top: 19vw;
+        transform: scale(1);
+
+    }
+
+}
+
+@keyframes son {
+
+    0% {
+        left: -20vw;
+        top: 25.5vw;
+        transform: scale(0.1);
+
+    }
+
+    80% {
+        left: 8vw;
+        top: 25.5vw;
+        transform: rotateZ(0deg);
+    }
+
+    85% {
+        left: 10vw;
+        top: 25.5vw;
+        transform: rotateZ(0deg);
+
+    }
+
+    95% {
+        left: 15vw;
+        top: 18.5vw;
+        transform: rotateZ(10deg);
+
+    }
+
+
+    100% {
+        left: 15vw;
+        top: 25.5vw;
+        transform: rotateZ(0deg);
+        transform: scale(1);
+
+    }
+
+}
+
+@keyframes coyote {
+
+    0% {
+        left: 100vw;
+        top: 25vw;
+        transform: rotateZ(0deg);
+    }
+
+    20% {
+        left: 90vw;
+        top: 10vw;
+        transform: rotateZ(0deg);
+    }
+
+    40% {
+        left: 80vw;
+        top: 25vw;
+        transform: rotateZ(0deg);
+    }
+
+    60% {
+        left: 70vw;
+        top: 10vw;
+        transform: rotateZ(0deg);
+    }
+
+    80% {
+        left: 53vw;
+        top: 25vw;
+        transform: rotateZ(0deg);
+
+    }
+
+    90% {
+        left: 53vw;
+        top: 20vw;
+        transform: rotateZ(30deg);
+
+    }
+
+    100% {
+        left: 53vw;
+        top: 25vw;
+        transform: rotateZ(0deg);
+
+    }
+
+}
+
+@keyframes clouds {
+
+    0% {
+        left: -66vw;
+
+
+    }
+
+    100% {
+        left: 105vw;
+
+    }
+
+}
+
+@keyframes scene {
+
+    0% {
+        opacity: 0;
+
+
+    }
+
+    100% {
+        opacity: 100;
+
+    }
+
+}

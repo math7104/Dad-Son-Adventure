@@ -1,0 +1,142 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#scene {
+    width: 100vw;
+    height: 56.84vw;
+    position: relative;
+    overflow: hidden;
+}
+
+/* LINKBOX */
+
+.link_container {
+    background-color: white;
+    text-align: center;
+
+}
+
+.links a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: sans-serif;
+    padding: 2em 4em;
+    border: 1em solid black;
+    border-radius: 0em;
+    color: black;
+
+}
+
+.links a:hover {
+    background-color: orange;
+    color: black;
+}
+
+/* OTHER */
+
+#dad {
+    width: 25%;
+    height: 25%;
+    background-image: url(Dad1.svg);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0vw;
+    left: 41.5vw;
+
+    animation-name: dad;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+#son {
+    width: 25%;
+    height: 25%;
+    background-image: url(Son1.svg);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 1.5vw;
+    left: 34.5vw;
+    transform: scale(.9)
+;
+    animation-name: dad;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes dad {
+
+    0% {
+        opacity: 0;
+
+
+    }
+
+    100% {
+        opacity: 100;
+
+    }
+
+}
+
+@keyframes son {
+
+    0% {
+        opacity: 0;
+
+
+    }
+
+    100% {
+        opacity: 100;
+
+    }
+
+}
+
+h1 {
+    text-align: center;
+    animation-name: h1;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-style: normal; 
+}
+
+h3 {
+    text-align: center;
+    animation-name: h3;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    font-weight: lighter;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+@keyframes h1 {
+    
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 100;
+    }
+    
+}
+
+@keyframes h3 {
+    
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 100;
+    }
+    
+}

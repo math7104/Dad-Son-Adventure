@@ -1,0 +1,78 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    text-align: left;
+    color: white;
+    animation-name: topleft;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+}
+
+.top-left {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    animation-name: topleft;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+}
+
+/* LINKBOX */
+
+.link_container {
+    background-color: white;
+    text-align: center;
+
+}
+
+.links a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: sans-serif;
+    padding: 2em 4em;
+    border: 1em solid black;
+    border-radius: 0em;
+    color: black;
+
+}
+
+.links a:hover {
+    background-color: orange;
+    color: black;
+}
+
+#tekst {
+    padding: 0px;
+}
+
+/* OVERSKRIFTER */
+
+h1 {
+    font-family: sans-serif;
+    font-size: 40px;
+    color: black;
+}
+
+/* BRØDTEKST */
+
+p {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+@keyframes topleft {
+    
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 100;
+    }
+    
+}
